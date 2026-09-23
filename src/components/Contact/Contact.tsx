@@ -1,12 +1,6 @@
 import type { Dictionary } from "@/dictionaries";
 import { SectionHeading } from "@/components/SectionHeading/SectionHeading";
-import {
-  MailIcon,
-  PhoneIcon,
-  TelegramIcon,
-  LinkedInIcon,
-  GithubIcon,
-} from "./icons";
+import { MailIcon, TelegramIcon, LinkedInIcon, GithubIcon } from "./icons";
 import styles from "./Contact.module.scss";
 
 export function Contact({ dict }: { dict: Dictionary }) {
@@ -20,10 +14,6 @@ export function Contact({ dict }: { dict: Dictionary }) {
           <a className={styles.item} href={`mailto:${contact.email}`}>
             <MailIcon className={styles.icon} />
             {contact.email}
-          </a>
-          <a className={styles.item} href={`tel:${contact.phone}`}>
-            <PhoneIcon className={styles.icon} />
-            {contact.phone}
           </a>
           <a
             className={`${styles.item} ${styles.telegram}`}
