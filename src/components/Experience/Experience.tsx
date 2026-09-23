@@ -11,14 +11,12 @@ export function Experience({
   dict: Dictionary;
   detailed?: boolean;
 }) {
-  const items = detailed ? [...dict.experience].reverse() : dict.experience;
-
   return (
     <section id="experience">
       <div className="container">
         <SectionHeading title={dict.sections.experience} />
         <div className={styles.timeline}>
-          {items.map((item) => (
+          {dict.experience.map((item) => (
             <div key={`${item.company}-${item.role}`} className={styles.job}>
               <div className={styles.period}>{item.period}</div>
               <div>
