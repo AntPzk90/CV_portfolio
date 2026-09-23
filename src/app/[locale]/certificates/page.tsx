@@ -49,7 +49,12 @@ export default async function CertificatesPage({
                   >
                     <div className={styles.thumb}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={withBasePath(cert.image)} alt={cert.title} />
+                      <img
+                        src={withBasePath(cert.image)}
+                        alt={cert.title}
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
                     <div className={styles.info}>
                       <h3 className={styles.title}>{cert.title}</h3>

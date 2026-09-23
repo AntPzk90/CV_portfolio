@@ -24,6 +24,8 @@ export function ImageSlider({ images, alt }: ImageSliderProps) {
       <img
         src={withBasePath(images[index])}
         alt={`${alt} — ${index + 1}/${images.length}`}
+        loading="lazy"
+        decoding="async"
       />
 
       {images.length > 1 && (

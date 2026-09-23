@@ -28,7 +28,13 @@ export function CompanyLogo({ company }: { company: string }) {
     return (
       <span className={styles.badge}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logoSrc} alt={company} className={styles.image} />
+        <img
+          src={logoSrc}
+          alt={company}
+          className={styles.image}
+          loading="lazy"
+          decoding="async"
+        />
       </span>
     );
   }

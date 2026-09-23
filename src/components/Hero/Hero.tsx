@@ -13,7 +13,11 @@ export function Hero({ dict }: { dict: Dictionary }) {
             srcSet={`${withBasePath("/avatar-1x.jpg")} 1x, ${withBasePath("/avatar-2x.jpg")} 2x, ${withBasePath("/avatar-3x.jpg")} 3x`}
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={withBasePath("/avatar-2x.jpg")} alt={profile.name} />
+          <img
+            src={withBasePath("/avatar-2x.jpg")}
+            alt={profile.name}
+            fetchPriority="high"
+          />
         </picture>
         <div className={styles.content}>
           <h1 className={styles.name}>{profile.name}</h1>
