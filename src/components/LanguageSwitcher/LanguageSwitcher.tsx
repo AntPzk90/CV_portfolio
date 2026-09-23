@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/dictionaries";
+import { withBasePath } from "@/lib/basePath";
 import styles from "./LanguageSwitcher.module.scss";
 
 const LOCALE_LABELS: Record<Locale, string> = {
@@ -22,7 +23,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
       {locales.map((code) => (
         <a
           key={code}
-          href={`/${code}${rest}`}
+          href={withBasePath(`/${code}${rest}`)}
           onClick={() => handleClick(code)}
           className={code === locale ? styles.active : styles.link}
           aria-current={code === locale ? "page" : undefined}

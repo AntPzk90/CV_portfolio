@@ -1,6 +1,7 @@
 import { getDictionary, defaultLocale, isLocale } from "@/dictionaries";
 import { PageIntro } from "@/components/PageIntro/PageIntro";
 import { Footer } from "@/components/Footer/Footer";
+import { withBasePath } from "@/lib/basePath";
 import styles from "./page.module.scss";
 
 export default async function CertificatesPage({
@@ -25,13 +26,13 @@ export default async function CertificatesPage({
                   <a
                     key={cert.title}
                     className={styles.card}
-                    href={cert.image}
+                    href={withBasePath(cert.image)}
                     target="_blank"
                     rel="noreferrer"
                   >
                     <div className={styles.thumb}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={cert.image} alt={cert.title} />
+                      <img src={withBasePath(cert.image)} alt={cert.title} />
                     </div>
                     <div className={styles.info}>
                       <h3 className={styles.title}>{cert.title}</h3>

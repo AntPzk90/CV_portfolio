@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { withBasePath } from "@/lib/basePath";
 import styles from "./ImageSlider.module.scss";
 
 type ImageSliderProps = {
@@ -20,7 +21,10 @@ export function ImageSlider({ images, alt }: ImageSliderProps) {
   return (
     <div className={styles.slider}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={images[index]} alt={`${alt} — ${index + 1}/${images.length}`} />
+      <img
+        src={withBasePath(images[index])}
+        alt={`${alt} — ${index + 1}/${images.length}`}
+      />
 
       {images.length > 1 && (
         <>

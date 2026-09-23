@@ -6,7 +6,7 @@ import {
   isLocale,
 } from "@/dictionaries";
 import { Header } from "@/components/Header/Header";
-import "../globals.scss";
+import { HtmlLangSetter } from "@/components/HtmlLangSetter/HtmlLangSetter";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -40,11 +40,10 @@ export default async function LocaleLayout({
   const dict = getDictionary(locale);
 
   return (
-    <html lang={locale}>
-      <body>
-        <Header dict={dict} locale={locale} />
-        {children}
-      </body>
-    </html>
+    <>
+      <HtmlLangSetter lang={locale} />
+      <Header dict={dict} locale={locale} />
+      {children}
+    </>
   );
 }

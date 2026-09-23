@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { CSSProperties } from "react";
 import { getCompanyLogo } from "@/lib/companyLogos";
+import { withBasePath } from "@/lib/basePath";
 import styles from "./CompanyLogo.module.scss";
 
 const LOGO_DIR = path.join(process.cwd(), "public", "logos");
@@ -11,7 +12,7 @@ function findLogoFile(slug: string): string | undefined {
   for (const ext of EXTENSIONS) {
     const file = `${slug}.${ext}`;
     if (fs.existsSync(path.join(LOGO_DIR, file))) {
-      return `/logos/${file}`;
+      return withBasePath(`/logos/${file}`);
     }
   }
   return undefined;

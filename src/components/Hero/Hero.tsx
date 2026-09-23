@@ -1,4 +1,5 @@
 import type { Dictionary } from "@/dictionaries";
+import { withBasePath } from "@/lib/basePath";
 import styles from "./Hero.module.scss";
 
 export function Hero({ dict }: { dict: Dictionary }) {
@@ -9,10 +10,10 @@ export function Hero({ dict }: { dict: Dictionary }) {
       <div className={`container ${styles.inner}`}>
         <picture className={styles.avatar}>
           <source
-            srcSet="/avatar-1x.jpg 1x, /avatar-2x.jpg 2x, /avatar-3x.jpg 3x"
+            srcSet={`${withBasePath("/avatar-1x.jpg")} 1x, ${withBasePath("/avatar-2x.jpg")} 2x, ${withBasePath("/avatar-3x.jpg")} 3x`}
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/avatar-2x.jpg" alt={profile.name} />
+          <img src={withBasePath("/avatar-2x.jpg")} alt={profile.name} />
         </picture>
         <div className={styles.content}>
           <h1 className={styles.name}>{profile.name}</h1>
