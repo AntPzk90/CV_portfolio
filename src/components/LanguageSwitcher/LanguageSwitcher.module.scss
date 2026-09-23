@@ -1,0 +1,35 @@
+.switcher {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.link,
+.active {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  color: var(--text-muted);
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.active {
+  background: var(--accent);
+  color: white;
+}

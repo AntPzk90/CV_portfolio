@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  color: var(--text);
+}
+
+.item:hover {
+  color: var(--accent);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+
+.item:hover .icon {
+  color: var(--accent);
+}
+
+.telegram .icon,
+.telegram:hover .icon {
+  color: #26a5e4;
+}
+
+.linkedin .icon,
+.linkedin:hover .icon {
+  color: inherit;
+}

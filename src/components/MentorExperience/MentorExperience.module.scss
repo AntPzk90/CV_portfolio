@@ -1,0 +1,58 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+}
+
+.period {
+  color: var(--text-muted);
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.role {
+  font-weight: 600;
+  font-size: 15.5px;
+  margin: 0 0 2px;
+}
+
+.companyRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 8px;
+}
+
+.company {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+a.company:hover {
+  color: var(--accent);
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.description + .description {
+  margin-top: 8px;
+}
+
+@media (max-width: 560px) {
+  .job {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
