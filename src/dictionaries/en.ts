@@ -116,34 +116,16 @@ export const en = {
 
   experience: [
     {
-      period: "2019 — 2020",
-      role: "Markup Developer",
-      company: "At-home studio",
-      description: "Developed easy markup (HTML, CSS) templates.",
-      fullDescription: [
-        "Worked as a web developer's assistant — these were my first steps into web development, and they showed me it was a career where I could truly grow and realize myself.",
-      ] as string[] | undefined,
-    },
-    {
-      period: "2020 — 2021",
-      role: "Frontend Developer + WordPress",
-      company: "ISWD studio",
+      period: "2024 — 2026",
+      role: "Senior Front-End / UI Developer · Dev Lead",
+      company: "InsulaLabs (iGaming)",
       description:
-        "Developed frontend for websites, landing pages and e-commerce platforms using WordPress.",
+        "Responsive, cross-browser layout development using best practices and modern approaches. Development and implementation of UI elements. Maintenance of existing interfaces and creation of new ones. White-label projects. Code reviews, mentoring, communication with QA, PO and PDM.",
       fullDescription: [
-        "This was already fully independent work — I built layouts from Figma designs and converted them into WordPress markup, and also worked with other CMS platforms like Drupal and OpenCart.",
-        "The focus was on markup and layout: landing pages, multi-page websites, online stores and CRM builds of varying complexity.",
-      ] as string[] | undefined,
-    },
-    {
-      period: "2021",
-      role: "Frontend Developer",
-      company: "Webuants Pro",
-      description:
-        "Developed responsive landing pages, e-commerce platforms and websites. Built SPA applications with Vue, Nuxt and React.",
-      fullDescription: [
-        "Here I worked with Vue and Nuxt as well as React and Next.js — these were small SPA applications and various kinds of websites, built both for the company itself and on outstaff engagements.",
-        "I also handled markup from Figma and WordPress. Development was done alongside a backend team working in Laravel. This was also where I started communicating directly with PMs and clients.",
+        "This is an iGaming company under a very strict NDA, so project details are limited to a general overview.",
+        "I started here as a Senior Markup Developer and later grew into a Dev Lead — besides my own development work, I led development within a team of three developers.",
+        "The focus was on modern, fairly complex mobile-first markup: performance was critical, since the projects had large numbers of users and had to stay fast under load.",
+        "We built new brands and supported existing ones, shipped new components and features, and kept improving performance, while staying in close communication with QA, PO, PM and designers. I really enjoyed the work, but I was let go in a layoff.",
       ] as string[] | undefined,
     },
     {
@@ -159,16 +141,34 @@ export const en = {
       ] as string[] | undefined,
     },
     {
-      period: "2024 — 2026",
-      role: "Senior Front-End / UI Developer · Dev Lead",
-      company: "InsulaLabs (iGaming)",
+      period: "2021",
+      role: "Frontend Developer",
+      company: "Webuants Pro",
       description:
-        "Responsive, cross-browser layout development using best practices and modern approaches. Development and implementation of UI elements. Maintenance of existing interfaces and creation of new ones. White-label projects. Code reviews, mentoring, communication with QA, PO and PDM.",
+        "Developed responsive landing pages, e-commerce platforms and websites. Built SPA applications with Vue, Nuxt and React.",
       fullDescription: [
-        "This is an iGaming company under a very strict NDA, so project details are limited to a general overview.",
-        "I started here as a Senior Markup Developer and later grew into a Dev Lead — besides my own development work, I led development within a team of three developers.",
-        "The focus was on modern, fairly complex mobile-first markup: performance was critical, since the projects had large numbers of users and had to stay fast under load.",
-        "We built new brands and supported existing ones, shipped new components and features, and kept improving performance, while staying in close communication with QA, PO, PM and designers. I really enjoyed the work, but I was let go in a layoff.",
+        "Here I worked with Vue and Nuxt as well as React and Next.js — these were small SPA applications and various kinds of websites, built both for the company itself and on outstaff engagements.",
+        "I also handled markup from Figma and WordPress. Development was done alongside a backend team working in Laravel. This was also where I started communicating directly with PMs and clients.",
+      ] as string[] | undefined,
+    },
+    {
+      period: "2020 — 2021",
+      role: "Frontend Developer + WordPress",
+      company: "ISWD studio",
+      description:
+        "Developed frontend for websites, landing pages and e-commerce platforms using WordPress.",
+      fullDescription: [
+        "This was already fully independent work — I built layouts from Figma designs and converted them into WordPress markup, and also worked with other CMS platforms like Drupal and OpenCart.",
+        "The focus was on markup and layout: landing pages, multi-page websites, online stores and CRM builds of varying complexity.",
+      ] as string[] | undefined,
+    },
+    {
+      period: "2019 — 2020",
+      role: "Markup Developer",
+      company: "At-home studio",
+      description: "Developed easy markup (HTML, CSS) templates.",
+      fullDescription: [
+        "Worked as a web developer's assistant — these were my first steps into web development, and they showed me it was a career where I could truly grow and realize myself.",
       ] as string[] | undefined,
     },
   ],
